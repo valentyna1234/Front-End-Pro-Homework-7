@@ -1,31 +1,17 @@
-let numOrStr = prompt('input number or string');
-console.log(numOrStr)
+let numOrStr =prompt('input number or string');
+console.log(numOrStr);
 
-
-
-if(numOrStr === null) {
-console.log('ви скасували')
-} else if( numOrStr.trim() === '' ) {
-console.log('Empty String');
-} else if ( isNaN( +numOrStr ) ) {
-console.log(' number is Ba_NaN')
-} else {
-console.log('OK!')
-}
-
-//Rewrite the code below using the switch…case construct
-
-switch (true) {
-    case numOrStr === null:
-        console.log('switch.ви скасували');
+switch(numOrStr){
+    case null:
+        console.log("S2.ви скасували");
         break;
-    case numOrStr.trim() === '':
-        console.log('switch.Empty String');
-        break;
-    case isNaN( +numOrStr ):
-        console.log('switch. number is Ba_NaN');
+    case  '':
+        console.log("S2.Empty String");
         break;
     default:
-        console.log('switch.OK!');
+        if (isNaN(numOrStr)){
+            console.log("iS2. number is Ba_NaN");
+        } else { (console.log("S2. OK!"));
         break;
-}
+        }
+     }
