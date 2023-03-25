@@ -3,15 +3,15 @@ console.log(numOrStr);
 
 switch(numOrStr){
     case null:
-        console.log("S2.ви скасували");
+        console.log("ви скасували");
         break;
     case  '':
-        console.log("S2.Empty String");
+        console.log("Empty String");
         break;
     default:
         if (isNaN(numOrStr)){
-            console.log("iS2. number is Ba_NaN");
-        } else { (console.log("S2. OK!"));
+            console.log(" number is Ba_NaN");
+        } else { (console.log("OK!"));
         break;
         }
      }
